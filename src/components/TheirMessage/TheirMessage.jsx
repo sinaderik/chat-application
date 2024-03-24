@@ -15,7 +15,7 @@ export default function TheirMessage({ lastMessage, message }) {
         message?.attachments?.length > 0
           ? (
             <img
-              src={message.attachments.file[0]}
+              src={message.attachments[0].file}
               alt='message-attachments'
               className='message-image'
               style={{ marginLeft: isFirstMessageByUser ? '4px' : '48px' }}

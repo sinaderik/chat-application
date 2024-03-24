@@ -17,7 +17,7 @@ export default function MessageForm(props) {
 
   function handleChange(event) {
     setValue(event.target.value)
-    isTyping(props, chatId);
+    // isTyping(props, chatId);
   }
 
   function handleUpload(event) {
@@ -46,7 +46,7 @@ export default function MessageForm(props) {
         style={{ display: "none" }}
         onChange={handleUpload}
       />
-      <button type="button" className='send-buttom'>
+      <button type="button" className='send-button'>
         <SendOutlined className='send-icon'/>
       </button>
     </form>

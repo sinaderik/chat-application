@@ -3,7 +3,7 @@ import React from 'react'
 export default function MyMessage({ message }) {
 
   if (message?.attachments?.length > 0) {
-    console.log(message)
+
     return (
       <img
         src={message.attachments[0].file}
