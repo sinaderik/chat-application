@@ -2,6 +2,8 @@ import React from 'react'
 import MyMessage from "../MyMessage/MyMessage"
 import TheirMessage from "../TheirMessage/TheirMessage"
 import MessageForm from "../MessageForm/MessageForm"
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
 
 export default function ChatFeed(props) {
 
@@ -35,7 +37,13 @@ export default function ChatFeed(props) {
 
     renderMessage()
 
-    if (!chat) return "loading..."
+    if (!chat) return (
+        <div style={{height:"100vh" , width:"100%", display:"flex", alignItems:"center" , justifyContent:"center"}}>
+            <Box sx={{ display: 'flex' }}>
+                <CircularProgress />
+            </Box>
+        </div>
+    )
     return (
         <div className='chat-feed'>
             <div className='chat-title-container'>
@@ -48,7 +56,7 @@ export default function ChatFeed(props) {
                     })}
                 </div>
             </div>
-            
+
             {renderMessage()}
 
             <div style={{ height: "100px" }} />
