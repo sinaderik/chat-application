@@ -15,7 +15,7 @@ export default function MyMessage({ message }) {
 
   return (
     <div 
-    className='message'
+    className='message my-message'
     style={{float:"right", marginRight:"18px",color:"white",backgroundColor:"#3B2A50"}}
     >
       {message.text}
