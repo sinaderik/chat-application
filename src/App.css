@@ -267,7 +267,7 @@
     margin: 5px;
     width: 90%;
   }
-  .button span {
+  /* .button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -287,7 +287,7 @@
   .button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+  } */
   
   .error {
     color: white;
